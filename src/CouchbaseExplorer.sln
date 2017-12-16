@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalvinAllen.CouchbaseVS.Vsix", "CalvinAllen.CouchbaseVS.Vsix\CalvinAllen.CouchbaseVS.Vsix.csproj", "{8AF8BEEF-6FCC-4479-8D85-540A414D0EA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalvinAllen.CouchbaseExplorer.Vsix", "CalvinAllen.CouchbaseExplorer.Vsix\CalvinAllen.CouchbaseExplorer.Vsix.csproj", "{8AF8BEEF-6FCC-4479-8D85-540A414D0EA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
