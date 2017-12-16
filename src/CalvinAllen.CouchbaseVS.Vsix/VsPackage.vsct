@@ -6,9 +6,9 @@
 	
   <Commands package="guidVsPackage">
     <Buttons>
-      <Button guid="guidVsPackageCmdSet" id="CouchbaseExplorerWindowCommandId" priority="0x0500" type="Button">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_VIEW"/>
-        <Icon guid="guidCouchbaseIcon" id="logo" />
+      <Button guid="guidVsPackageCmdSet" id="CouchbaseExplorerWindowCommandId" priority="5000" type="Button">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_VIEW_ORG_WINDOWS"/>
+        <Icon guid="guidCouchbaseIcon" id="couchbaseIcon" />
         <Strings>
           <ButtonText>Couchbase Explorer</ButtonText>
         </Strings>
@@ -16,7 +16,7 @@
     </Buttons>
 
     <Bitmaps>
-	    <Bitmap guid="guidCouchbaseIcon" href="Resources\Logo.png" usedList="logo"/>
+	    <Bitmap guid="guidCouchbaseIcon" href="Resources\couchbaseIcon.png" usedList="couchbaseIcon"/>
     </Bitmaps>
   </Commands>
 
@@ -28,7 +28,7 @@
     </GuidSymbol>
 
 		<GuidSymbol name="guidCouchbaseIcon" value="{5adaa369-1a0a-437f-bf63-f609baad46fb}">
-			<IDSymbol name="logo" value="1"/>
+			<IDSymbol name="couchbaseIcon" value="1"/>
 		</GuidSymbol>
   </Symbols>
 </CommandTable>

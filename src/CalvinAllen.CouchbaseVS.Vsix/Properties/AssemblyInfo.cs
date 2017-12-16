@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CalvinAllen.CouchbaseVS.Vsix")]
+[assembly: AssemblyTitle("Couchbase Explorer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CalvinAllen.CouchbaseVS.Vsix")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyProduct("CalvinAllen.CouchbaseExplorer.Vsix")]
+[assembly: AssemblyCopyright("2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

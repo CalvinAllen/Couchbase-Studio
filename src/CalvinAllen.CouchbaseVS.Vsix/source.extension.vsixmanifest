@@ -2,11 +2,11 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
         <Identity Id="ef261503-b2ae-4b90-8c86-0becd83348cc" Version="1.0" Language="en-US" Publisher="Calvin A. Allen" />
-        <DisplayName>CouchbaseVS</DisplayName>
-        <Description xml:space="preserve">CouchbaseVS is an extension to Visual Studio that will assist in communication to a Couchbase Server during the development process.</Description>
+        <DisplayName>Couchbase Explorer</DisplayName>
+        <Description xml:space="preserve">Couchbase Explorer is an extension to Visual Studio that will assist in communication to a Couchbase Server during the development process.</Description>
         <MoreInfo>https://github.com/calvinallen/CouchbaseVS</MoreInfo>
         <License>Resources\LICENSE</License>
-        <Icon>Resources\logo.png</Icon>
+        <Icon>Resources\logo.ico</Icon>
         <Tags>couchbase, vs, server</Tags>
     </Metadata>
     <Installation>
