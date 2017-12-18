@@ -12,7 +12,11 @@
     <Grid>
         <StackPanel Orientation="Vertical">
             <TextBlock Margin="10" HorizontalAlignment="Center">CouchbaseExplorerWindow</TextBlock>
-            <Button Content="Click me!" Click="button1_Click" Width="120" Height="80" Name="button1"/>
+            <TreeView x:Name="ServersTreeView" Height="240"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Click me!" Click="button1_Click" Height="28" x:Name="button1" />
+                <Button Content="Add Localhost" Click="addServerButton_Click" Height="28" x:Name="addServerButton" />
+            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>
