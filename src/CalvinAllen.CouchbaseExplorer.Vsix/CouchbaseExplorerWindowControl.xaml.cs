@@ -1,4 +1,9 @@
-﻿namespace CalvinAllen.CouchbaseVS.Vsix
+﻿using System;
+using System.Collections.Generic;
+using Couchbase;
+using Couchbase.Configuration.Client;
+
+namespace CalvinAllen.CouchbaseVS.Vsix
 {
 	using System.Diagnostics.CodeAnalysis;
 	using System.Windows;
@@ -30,5 +35,35 @@
 				string.Format(System.Globalization.CultureInfo.CurrentUICulture, "Invoked '{0}'", this.ToString()),
 				"CouchbaseExplorerWindow");
 		}
-	}
+
+        private void addServerButton_Click(object sender, RoutedEventArgs e)
+        {
+            ServersTreeView.Items.Clear();
+
+            var cluster = new Cluster(new ClientConfiguration
+            {
+                Servers = new List<Uri> {new Uri("http://localhost:8091")}
+            });
+            cluster.Authenticate("Administrator", "password");
+            var clusterMan = cluster.CreateManager("Administrator", "password");
+
+            var rootNode = new TreeViewItem
+            {
+                Header = "localhost"
+            };
+            var queryNode = new TreeViewItem { Header = "Query"};
+            rootNode.Items.Add(queryNode);
+
+            var bucketsNode = new TreeViewItem { Header = "Buckets" };
+            var buckets = clusterMan.ListBuckets().Value;
+            foreach (var bucket in buckets)
+            {
+                var bucketNode = new TreeViewItem {Header = bucket.Name};
+                bucketsNode.Items.Add(bucketNode);
+            }
+            rootNode.Items.Add(bucketsNode);
+
+            ServersTreeView.Items.Add(rootNode);
+        }
+    }
 }
