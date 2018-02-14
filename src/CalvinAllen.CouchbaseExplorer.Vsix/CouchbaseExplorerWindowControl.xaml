@@ -12,7 +12,15 @@
     <Grid>
         <StackPanel Orientation="Vertical">
             <TextBlock Margin="10" HorizontalAlignment="Center">CouchbaseExplorerWindow</TextBlock>
-            <TreeView x:Name="ServersTreeView" Height="240"/>
+            <TreeView x:Name="ServersTreeView" Height="240">
+
+	            <TreeView.ContextMenu x:Uid="cxt">
+		            <ContextMenu Name="ContextMenu">
+			            <MenuItem Name="QueryAll" Header="Query All" Click="QueryAll_OnClick"></MenuItem>
+		            </ContextMenu>
+	            </TreeView.ContextMenu>
+
+			</TreeView>
             <StackPanel Orientation="Horizontal">
                 <Button Content="Click me!" Click="button1_Click" Height="28" x:Name="button1" />
                 <Button Content="Add Localhost" Click="addServerButton_Click" Height="28" x:Name="addServerButton" />

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Couchbase;
 using Couchbase.Configuration.Client;
+using Couchbase.N1QL;
 
 namespace CalvinAllen.CouchbaseVS.Vsix
 {
@@ -65,5 +66,31 @@ namespace CalvinAllen.CouchbaseVS.Vsix
 
             ServersTreeView.Items.Add(rootNode);
         }
-    }
+
+		private void QueryAll_OnClick(object sender, RoutedEventArgs e)
+		{
+			var contextMenuItem = (MenuItem) sender;
+			var selectedMenuItem = (TreeViewItem) ServersTreeView.SelectedItem;
+			var bucketName = selectedMenuItem.Header.ToString();
+
+			var cluster = new Cluster(new ClientConfiguration
+			{
+				Servers = new List<Uri> { new Uri("http://localhost:8091") }
+			});
+			cluster.Authenticate("Administrator", "password");
+			var clusterMan = cluster.CreateManager("Administrator", "password");
+
+			var bucket = cluster.OpenBucket(bucketName);
+			var query = QueryRequest.Create($"select META(tb).id, * from `{bucketName}` tb");
+
+			var results = bucket.Query<dynamic>(query);
+
+			foreach (var row in results.Rows)
+			{
+				MessageBox.Show(
+					string.Format(System.Globalization.CultureInfo.CurrentUICulture, "Document:  '{0}'", row.ToString()),
+					"CouchbaseExplorerWindow");
+			}
+		}
+	}
 }
