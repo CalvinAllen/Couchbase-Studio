@@ -1,16 +1,16 @@
 ﻿using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 
-namespace CodingWithCalvin.CouchbaseStudio
+namespace CodingWithCalvin.CouchbaseExplorer
 {
     [Guid("d7fbfae3-4b71-4507-86b0-0534e77d0292")]
-    public class CouchbaseStudioWindow : ToolWindowPane
+    public class CouchbaseExplorerWindow : ToolWindowPane
     {
-        public CouchbaseStudioWindow()
+        public CouchbaseExplorerWindow()
             : base(null)
         {
             this.Caption = "Couchbase Studio";
-            this.Content = new CouchbaseStudioWindowControl();
+            this.Content = new CouchbaseExplorerWindowControl();
         }
     }
 }

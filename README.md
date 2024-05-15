@@ -1,19 +1,19 @@
-# Couchbase Studio (BETA / PREVIEW)
+# Couchbase Explorer (BETA / PREVIEW)
 
 A Visual Stuio extension that adds a host of Couchbase & Capella data management and query capabilities right into your IDE!
 
 ## License
 
-[![License - MIT](https://img.shields.io/github/license/CodingWithCalvin/VS-CouchbaseStudio?style=for-the-badge)](https://img.shields.io/github/license/codingwithcalvin/VS-CouchbaseStudio?style=for-the-badge)
+[![License - MIT](https://img.shields.io/github/license/CodingWithCalvin/VS-CouchbaseExplorer?style=for-the-badge)](https://img.shields.io/github/license/codingwithcalvin/VS-CouchbaseExplorer?style=for-the-badge)
 
 ## Build Status
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/CodingWithCalvin/VS-CouchbaseStudio/release_build_and_deploy.yml?style=for-the-badge)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/CodingWithCalvin/VS-CouchbaseExplorer/release_build_and_deploy.yml?style=for-the-badge)
 
 ## Marketplace Status
 
-[![Marketplace Installations](https://img.shields.io/visual-studio-marketplace/i/codingwithcalvin.VS-CouchbaseStudio?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/i/codingwithcalvin.VS-CouchbaseStudio?style=for-the-badge) [![Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/codingwithcalvin.VS-CouchbaseStudio?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/codingwithcalvin.VS-CouchbaseStudio?style=for-the-badge)
-[![Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/codingwithcalvin.VS-CouchbaseStudio?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/v/codingwithcalvin.VS-CouchbaseStudio?style=for-the-badge) [![Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/codingwithcalvin.VS-CouchbaseStudio?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/r/codingwithcalvin.VS-CouchbaseStudio?style=for-the-badge)
+[![Marketplace Installations](https://img.shields.io/visual-studio-marketplace/i/codingwithcalvin.VS-CouchbaseExplorer?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/i/codingwithcalvin.VS-CouchbaseExplorer?style=for-the-badge) [![Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/codingwithcalvin.VS-CouchbaseExplorer?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/codingwithcalvin.VS-CouchbaseExplorer?style=for-the-badge)
+[![Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/codingwithcalvin.VS-CouchbaseExplorer?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/v/codingwithcalvin.VS-CouchbaseExplorer?style=for-the-badge) [![Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/codingwithcalvin.VS-CouchbaseExplorer?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/r/codingwithcalvin.VS-CouchbaseExplorer?style=for-the-badge)
 
 ## Prerequisite
 

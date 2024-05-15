@@ -1,10 +1,10 @@
 ﻿using System.Windows.Controls;
 
-namespace CodingWithCalvin.CouchbaseStudio
+namespace CodingWithCalvin.CouchbaseExplorer
 {
-    public partial class CouchbaseStudioWindowControl : UserControl
+    public partial class CouchbaseExplorerWindowControl : UserControl
     {
-        public CouchbaseStudioWindowControl()
+        public CouchbaseExplorerWindowControl()
         {
             this.InitializeComponent();
         }

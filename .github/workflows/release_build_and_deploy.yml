@@ -23,24 +23,24 @@ jobs:
       id: step-version
       uses: CodingWithCalvin/GHA-VSVsixVersioner@v1
       with:
-        extension-manifest-file: 'src/CodingWithCalvin.CouchbaseStudio/source.extension.vsixmanifest'
-        extension-source-file: 'src/CodingWithCalvin.CouchbaseStudio/source.extension.cs'
+        extension-manifest-file: 'src/CodingWithCalvin.CouchbaseExplorer/source.extension.vsixmanifest'
+        extension-source-file: 'src/CodingWithCalvin.CouchbaseExplorer/source.extension.cs'
 
     - name: 2. Restoring Packages
-      run: nuget restore src/CodingWithCalvin.CouchbaseStudio.sln
+      run: nuget restore src/CodingWithCalvin.CouchbaseExplorer.sln
     
     - name: 3. Building Project
-      run: msbuild 'src/CodingWithCalvin.CouchbaseStudio/CodingWithCalvin.CouchbaseStudio.csproj' /p:configuration='Release' /p:platform='x64' /p:DeployExtension=False
+      run: msbuild 'src/CodingWithCalvin.CouchbaseExplorer/CodingWithCalvin.CouchbaseExplorer.csproj' /p:configuration='Release' /p:platform='x64' /p:DeployExtension=False
 
     - name: 4. Create Information File
       uses: jsdaniell/create-json@v1.2.3
       with:
-        name: 'src/CodingWithCalvin.CouchbaseStudio/bin/x64/Release/CodingWithCalvin.CouchbaseStudio.info'
+        name: 'src/CodingWithCalvin.CouchbaseExplorer/bin/x64/Release/CodingWithCalvin.CouchbaseExplorer.info'
         json: '{"sha":"${{ github.sha }}", "version":"${{ steps.step-version.outputs.version }}"}'
     
     - name: 5. Publishing Build Artifact
       uses: actions/upload-artifact@v4
       with:
         path: |
-          src/CodingWithCalvin.CouchbaseStudio/bin/x64/Release/CodingWithCalvin.CouchbaseStudio.info
-          src/CodingWithCalvin.CouchbaseStudio/bin/x64/Release/CodingWithCalvin.CouchbaseStudio.vsix
+          src/CodingWithCalvin.CouchbaseExplorer/bin/x64/Release/CodingWithCalvin.CouchbaseExplorer.info
+          src/CodingWithCalvin.CouchbaseExplorer/bin/x64/Release/CodingWithCalvin.CouchbaseExplorer.vsix

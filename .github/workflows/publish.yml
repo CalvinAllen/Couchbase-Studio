@@ -22,12 +22,12 @@ jobs:
         id: artifact_manifest
         uses: ActionsTools/read-json-action@main
         with:
-          file_path: ./artifact/CodingWithCalvin.CouchbaseStudio.info
+          file_path: ./artifact/CodingWithCalvin.CouchbaseExplorer.info
           
       - name: 3. Create Tag & Release
         uses: ncipollo/release-action@v1.14.0
         with:
-          artifacts: ./artifact/CodingWithCalvin.CouchbaseStudio.vsix
+          artifacts: ./artifact/CodingWithCalvin.CouchbaseExplorer.vsix
           generateReleaseNotes: true
           makeLatest: true
           token: ${{ secrets.GH_SECRET }}
@@ -40,6 +40,6 @@ jobs:
         with:
           marketplace-pat: ${{ secrets.VS_PAT }}
           publish-manifest-path: ./resources/extension.manifest.json
-          vsix-path: ./artifact/CodingWithCalvin.CouchbaseStudio.vsix
+          vsix-path: ./artifact/CodingWithCalvin.CouchbaseExplorer.vsix
 
 

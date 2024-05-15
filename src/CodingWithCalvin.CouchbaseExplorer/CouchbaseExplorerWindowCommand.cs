@@ -3,9 +3,9 @@ using System.ComponentModel.Design;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 
-namespace CodingWithCalvin.CouchbaseStudio
+namespace CodingWithCalvin.CouchbaseExplorer
 {
-    internal sealed class CouchbaseStudioWindowCommand
+    internal sealed class CouchbaseExplorerWindowCommand
     {
         public const int CommandId = 0x0100;
 
@@ -13,7 +13,7 @@ namespace CodingWithCalvin.CouchbaseStudio
 
         private readonly Package _package;
 
-        private CouchbaseStudioWindowCommand(Package package)
+        private CouchbaseExplorerWindowCommand(Package package)
         {
             this._package = package ?? throw new ArgumentNullException(nameof(package));
 
@@ -33,18 +33,18 @@ namespace CodingWithCalvin.CouchbaseStudio
             commandService.AddCommand(menuItem);
         }
 
-        public static CouchbaseStudioWindowCommand Instance { get; private set; }
+        public static CouchbaseExplorerWindowCommand Instance { get; private set; }
 
         private IServiceProvider ServiceProvider => this._package;
 
         public static void Initialize(Package package)
         {
-            Instance = new CouchbaseStudioWindowCommand(package);
+            Instance = new CouchbaseExplorerWindowCommand(package);
         }
 
         private void ShowToolWindow(object sender, EventArgs e)
         {
-            var window = this._package.FindToolWindow(typeof(CouchbaseStudioWindow), 0, true);
+            var window = this._package.FindToolWindow(typeof(CouchbaseExplorerWindow), 0, true);
             if (window?.Frame == null)
             {
                 throw new NotSupportedException("Cannot create tool window");
