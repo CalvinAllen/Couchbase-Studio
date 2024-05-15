@@ -11,7 +11,7 @@
              Name="MyToolWindow">
     <Grid>
         <StackPanel Orientation="Vertical">
-            <TextBlock Margin="10" HorizontalAlignment="Center">Couchbase Studio Window</TextBlock>
+            <TextBlock Margin="10" HorizontalAlignment="Center">Couchbase Explorer</TextBlock>
             <TreeView x:Name="ServersTreeView" Height="240">
 
 	            <TreeView.ContextMenu>
