@@ -10,13 +10,13 @@
         <Parent guid="guidSHLMainMenu" id="IDG_VS_VIEW_ORG_WINDOWS"/>
         <Icon guid="guidCouchbaseIcon" id="couchbaseIcon" />
         <Strings>
-          <ButtonText>Couchbase Explorer</ButtonText>
+          <ButtonText>Couchbase Studio</ButtonText>
         </Strings>
       </Button>
     </Buttons>
 
     <Bitmaps>
-	    <Bitmap guid="guidCouchbaseIcon" href="Resources\couchbaseIcon.png" usedList="couchbaseIcon"/>
+	    <Bitmap guid="guidCouchbaseIcon" href="..\..\resources\icon.png" usedList="couchbaseIcon"/>
     </Bitmaps>
   </Commands>
 

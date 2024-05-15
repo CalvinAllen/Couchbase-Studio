@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingWithCalvin.CouchbaseStudio", "CodingWithCalvin.CouchbaseStudio\CodingWithCalvin.CouchbaseStudio.csproj", "{8AF8BEEF-6FCC-4479-8D85-540A414D0EA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{03E5C68E-7FB1-470D-A1B3-6C8308637711}"
+	ProjectSection(SolutionItems) = preProject
+		..\resources\extension.manifest.json = ..\resources\extension.manifest.json
+		..\.github\workflows\publish.yml = ..\.github\workflows\publish.yml
+		..\README.md = ..\README.md
+		..\.github\workflows\release_build_and_deploy.yml = ..\.github\workflows\release_build_and_deploy.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AF8BEEF-6FCC-4479-8D85-540A414D0EA2}.Debug|x64.ActiveCfg = Debug|x64
+		{8AF8BEEF-6FCC-4479-8D85-540A414D0EA2}.Debug|x64.Build.0 = Debug|x64
+		{8AF8BEEF-6FCC-4479-8D85-540A414D0EA2}.Release|x64.ActiveCfg = Release|x64
+		{8AF8BEEF-6FCC-4479-8D85-540A414D0EA2}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB3A44AC-56C2-4D56-9E02-B4741BB6DA74}
+	EndGlobalSection
+EndGlobal

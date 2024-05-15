@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="CalvinAllen.CouchbaseVS.Vsix.CouchbaseExplorerWindowControl"
+﻿<UserControl x:Class="CodingWithCalvin.CouchbaseStudio.CouchbaseStudioWindowControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -11,19 +11,19 @@
              Name="MyToolWindow">
     <Grid>
         <StackPanel Orientation="Vertical">
-            <TextBlock Margin="10" HorizontalAlignment="Center">CouchbaseExplorerWindow</TextBlock>
+            <TextBlock Margin="10" HorizontalAlignment="Center">Couchbase Studio Window</TextBlock>
             <TreeView x:Name="ServersTreeView" Height="240">
 
-	            <TreeView.ContextMenu x:Uid="cxt">
+	            <TreeView.ContextMenu>
 		            <ContextMenu Name="ContextMenu">
-			            <MenuItem Name="QueryAll" Header="Query All" Click="QueryAll_OnClick"></MenuItem>
+			            <!--<MenuItem Name="QueryAll" Header="Query All" Click="QueryAll_OnClick"></MenuItem>-->
 		            </ContextMenu>
 	            </TreeView.ContextMenu>
 
 			</TreeView>
             <StackPanel Orientation="Horizontal">
-                <Button Content="Click me!" Click="button1_Click" Height="28" x:Name="button1" />
-                <Button Content="Add Localhost" Click="addServerButton_Click" Height="28" x:Name="addServerButton" />
+                <!--<Button Content="Click me!" Click="button1_Click" Height="28" x:Name="button1" />-->
+                <!--<Button Content="Add Localhost" Click="addServerButton_Click" Height="28" x:Name="addServerButton" />-->
             </StackPanel>
         </StackPanel>
     </Grid>
